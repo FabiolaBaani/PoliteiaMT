@@ -112,7 +112,7 @@ app.post('/zdg-message', [
   const number = req.body.number;
   const numberDDI = number.substr(0, 2);
   const numberDDD = number.substr(2, 2);
-  const numberUser = number.substr(-8, 8);
+  const numberUser = number.substr(-9, 9);
   const message = req.body.message;
 
   if (numberDDI !== "55") {
