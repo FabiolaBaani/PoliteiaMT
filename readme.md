@@ -4,8 +4,8 @@
 
 Se a instalção for feita pela primeira vez:
 
-sudo su root
-cd -
+- sudo su root
+- cd -
 apt update
 apt upgrade
 curl - fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
