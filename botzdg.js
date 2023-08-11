@@ -378,7 +378,7 @@ else if (msg.body !== null && msg.body === "16"){
 
   else if (msg.body !== null || msg.body === "0" || msg.type === 'ptt' || msg.hasMedia) {
     msg.reply("*COMUNIDADE ZDG*\n\n🤪 _Usar o WPP de maneira manual é prejudicial a saúde_\r\n\r\nhttps://comunidadezdg.com.br/ \r\n\r\n⏱️ As inscrições estão *ABERTAS*");
-    const foto = MessageMedia.fromFilePath('./foto.jpeg');
+    const foto = MessageMedia.fromFilePath('./Politeia_IG.png');
     client.sendMessage(msg.from, foto)
     delay(3000).then(async function() {
       try{
