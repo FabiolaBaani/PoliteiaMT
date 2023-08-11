@@ -326,7 +326,7 @@ client.on('message', async msg => {
   }
 	  
 else if (msg.body !== null && msg.body === "16"){
-    const index = MessageMedia.fromFilePath('./precos.pdf');
+    const index = MessageMedia.fromFilePath('./PrecosDisparos.png');
     client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Voll'});
     delay(4500).then(async function() {
 		  msg.reply("Para saber todos os detalhes sobre valores, verifique nossa tabela de preços 😁");
