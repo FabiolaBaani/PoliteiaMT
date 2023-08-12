@@ -188,7 +188,7 @@ app.post('/zdg-media', [
   const numberDDI = number.substr(0, 2);
   const numberDDD = number.substr(2, 2);
   const numberUser = number.substr(-8, 8);
-  const caption = req.body.caption;
+  const caption = "";
   const fileUrl = req.body.file;
 
   let mimetype;
