@@ -270,7 +270,7 @@ client.on('message', async msg => {
   } 
   
   else if (msg.body !== null && msg.body === "2") {
-    msg.reply("*" + nomeContato + "*, você não precisa de nada para contratar o serviço de disparos para WhatsApp da Voll Marketing, apenas vontade de crescer e ganhar mais dinheiro!");
+    msg.reply("*" + nomeContato + "*, você não precisa de nada para contratar o serviço de disparos para WhatsApp da Politeia Marketing, apenas vontade de crescer e ganhar mais dinheiro!");
   }
   
   else if (msg.body !== null && msg.body === "3") {
@@ -279,9 +279,9 @@ client.on('message', async msg => {
      
     else if (msg.body !== null && msg.body === "4"){
     const index = MessageMedia.fromFilePath('./Automação de conversas.pdf');
-    client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Voll'});
+    client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Politeia'});
     delay(4500).then(async function() {
-		  msg.reply("Neste arquivo você encontra as localidades onde a Voll atua ");
+		  msg.reply("Neste arquivo você encontra as localidades onde a Politeia atua ");
     });
   }
   
@@ -327,7 +327,7 @@ client.on('message', async msg => {
 	  
 else if (msg.body !== null && msg.body === "16"){
     const index = MessageMedia.fromFilePath('./PrecosDisparos.png');
-    client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Voll'});
+    client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Politeia'});
     delay(4500).then(async function() {
 		  msg.reply("Para saber todos os detalhes sobre valores, verifique nossa tabela de preços 😁");
     });
@@ -336,15 +336,15 @@ else if (msg.body !== null && msg.body === "16"){
 
         const contact = await msg.getContact();
         setTimeout(function() {
-            msg.reply(`@${contact.number}` + ' seu contato já foi encaminhado para a Voll');  
-            client.sendMessage('5511981189262@c.us','Contato Voll. https://wa.me/' + `${contact.number}`);
+            msg.reply(`@${contact.number}` + ' seu contato já foi encaminhado para a Politeia');  
+            client.sendMessage('5511981189262@c.us','Contato Politeia. https://wa.me/' + `${contact.number}`);
 	    //client.sendMessage('5511981189262@c.us',`${contact.number}`);
           },1000 + Math.floor(Math.random() * 1000));
   
   }
   
   else if (msg.body !== null && msg.body === "17") {
-    msg.reply("Seu contato já foi encaminhado para a Voll");
+    msg.reply("Seu contato já foi encaminhado para a Politeia");
   } 
   
   else if (msg.body !== null && msg.body === "18") {
@@ -377,12 +377,12 @@ else if (msg.body !== null && msg.body === "16"){
   }
 
   else if (msg.body !== null || msg.body === "0" || msg.type === 'ptt' || msg.hasMedia) {
-    msg.reply("*COMUNIDADE ZDG*\n\n🤪 _Usar o WPP de maneira manual é prejudicial a saúde_\r\n\r\nhttps://comunidadezdg.com.br/ \r\n\r\n⏱️ As inscrições estão *ABERTAS*");
-    const foto = MessageMedia.fromFilePath('./Politeia_IG.png');
+    msg.reply("*" + nomeContato + "* 🤗, nossa secretária virtual tem uma recado para você!");
+    const foto = MessageMedia.fromFilePath('./midia.png');
     client.sendMessage(msg.from, foto)
     delay(3000).then(async function() {
       try{
-        const media = MessageMedia.fromFilePath('./comunidade.ogg');
+        const media = MessageMedia.fromFilePath('./saudacao.ogg');
         client.sendMessage(msg.from, media, {sendAudioAsVoice: true})
         //msg.reply(media, {sendAudioAsVoice: true});
       } catch(e){
@@ -390,16 +390,15 @@ else if (msg.body !== null && msg.body === "16"){
       }
 		});
     delay(8000).then(async function() {
-      const saudacaoes = ['Olá ' + nomeContato + ', como vai você?'];
-      const saudacao = saudacaoes[Math.floor(Math.random() * saudacaoes.length)];
-      msg.reply(saudacao + " Este é um atendimento automático. Caso queira falar com um atendente, clique no número a seguir *6581121502*. \r\n\r\n Ou se quiser resolver sua dúvida por aqui agora mesmo, escolha uma das opções abaixo para iniciarmos a nossa conversa: \r\n\r\n*[ 1 ]* Quero saber como funcionam os disparos de WhatsApp? \r\n*[ 2 ]* Quais equipamentos preciso ter para iniciar este serviço? \r\n*[ 3 ]* Terei que instalar ou configurar alguma coisa? \r\n*[ 4 ]* Posso enviar minha propaganda para o Brasil todo?* \r\n*[ 5 ]* Este robô responde as mensagens enviadas pelos clientes?\r\n*[ 6 ]* Preciso estar com meu celular conectado na internet para efetuar os disparos? \r\n*[ 7 ]* Se eu estiver viajando ou em reunião, os disparos continuam funcionando?\r\n*[ 8 ]* Preciso ter um número exclusivo para efetuar os disparos? \r\n*[ 16 ]* Quanto custa este serviço?  \r\n*[ 17 ]* Minha dúvida não está aqui, quero falar com alguém da Voll");
-		});
+      const saudacao = ("Este é um atendimento automático. Caso queira falar com um atendente, clique no número a seguir *11977750211*. \r\n\r\n Ou se quiser resolver sua dúvida por aqui agora mesmo, escolha uma das opções abaixo para iniciarmos a nossa conversa: \r\n\r\n*[ 1 ]* Quero saber como funcionam os disparos de WhatsApp? \r\n*[ 2 ]* Quais equipamentos preciso ter para iniciar este serviço? \r\n*[ 3 ]* Terei que instalar ou configurar alguma coisa? \r\n*[ 4 ]* Posso enviar minha propaganda para o Brasil todo?* \r\n*[ 5 ]* Este robô responde as mensagens enviadas pelos clientes?\r\n*[ 6 ]* Preciso estar com meu celular conectado na internet para efetuar os disparos? \r\n*[ 7 ]* Se eu estiver viajando ou em reunião, os disparos continuam funcionando?\r\n*[ 8 ]* Preciso ter um número exclusivo para efetuar os disparos? \r\n*[ 16 ]* Quanto custa este serviço?  \r\n*[ 17 ]* Minha dúvida não está aqui, quero falar com alguém da Politeia");
+	     client.sendMessage(msg.from, saudacao)
+     		});
     
 	}
 });
 
-console.log("\nA Comunidade ZDG é a oportunidade perfeita para você aprender a criar soluções incríveis usando as APIs, sem precisar de experiência prévia com programação. Com conteúdo exclusivo e atualizado, você terá tudo o que precisa para criar robôs, sistemas de atendimento e automações do zero. O curso é projetado para iniciantes e avançados, e oferece um aprendizado prático e passo a passo para que você possa criar soluções incríveis.")
-console.log("\nIncreva-se agora acessando link: comunidadezdg.com.br\n")
+console.log("")
+console.log("")
     
 server.listen(port, function() {
         console.log('Aplicação rodando na porta *: ' + port + ' . Acesse no link: http://localhost:' + port);
