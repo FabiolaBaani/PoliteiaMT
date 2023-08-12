@@ -204,7 +204,7 @@ app.post('/zdg-media', [
 
   if (numberDDI !== "55") {
     const numberZDG = number + "@c.us";
-    client.sendMessage(numberZDG, media, {caption: caption}).then(response => {
+    client.sendMessage(numberZDG, media).then(response => {
     res.status(200).json({
       status: true,
       message: 'BOT-POLITEIA Imagem enviada',
