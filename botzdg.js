@@ -92,7 +92,7 @@ client.on('disconnected', (reason) => {
 });
 
 // Send message
-app.post('/zdg-message', [
+app.post('/politeia-message', [
   body('number').notEmpty(),
   body('message').notEmpty(),
 ], async (req, res) => {
@@ -167,7 +167,7 @@ app.post('/zdg-message', [
 
 
 // Send media
-app.post('/zdg-media', [
+app.post('/politeia-media', [
   body('number').notEmpty(),
   body('file').notEmpty(),
 ], async (req, res) => {
