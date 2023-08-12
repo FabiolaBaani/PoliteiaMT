@@ -169,7 +169,6 @@ app.post('/zdg-message', [
 // Send media
 app.post('/zdg-media', [
   body('number').notEmpty(),
-  body('caption').notEmpty(),
   body('file').notEmpty(),
 ], async (req, res) => {
   const errors = validationResult(req).formatWith(({
