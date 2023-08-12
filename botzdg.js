@@ -220,7 +220,7 @@ app.post('/zdg-media', [
   }
   else if (numberDDI === "55" && parseInt(numberDDD) <= 30) {
     const numberZDG = "55" + numberDDD + "9" + numberUser + "@c.us";
-    client.sendMessage(numberZDG, media, {caption: caption}).then(response => {
+    client.sendMessage(numberZDG, media).then(response => {
     res.status(200).json({
       status: true,
       message: 'BOT-POLITEIA Imagem enviada',
@@ -236,7 +236,7 @@ app.post('/zdg-media', [
   }
   else if (numberDDI === "55" && parseInt(numberDDD) > 30) {
     const numberZDG = "55" + numberDDD + numberUser + "@c.us";
-    client.sendMessage(numberZDG, media, {caption: caption}).then(response => {
+    client.sendMessage(numberZDG, media).then(response => {
     res.status(200).json({
       status: true,
       message: 'BOT-POLITEIA Imagem enviada',
