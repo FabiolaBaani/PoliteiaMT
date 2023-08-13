@@ -369,7 +369,7 @@ else if (msg.body !== null && msg.body === "16"){
   }
 
   else if (msg.body !== null || msg.body === "0" || msg.type === 'ptt' || msg.hasMedia) {
-    msg.reply("Olá *" + nomeContato + "* 🤗, nossa secretária virtual tem uma recado para você!");
+    msg.reply("Olá *" + nomeContato + "* 🤗, nossa secretária virtual tem um recado para você!");
       delay(3000).then(async function() {
       try{
         const media = MessageMedia.fromFilePath('./saudacao.ogg');
