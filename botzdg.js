@@ -379,7 +379,7 @@ else if (msg.body !== null && msg.body === "16"){
         console.log('audio off')
       }
 		});
-    delay(8000).then(async function() {
+    delay(12000).then(async function() {
       const saudacao = ("Este é um atendimento automático. Caso queira falar com um atendente, clique no número a seguir 📲*11949146253*. \r\n\r\nOu se quiser resolver sua dúvida por aqui agora mesmo, digite o número de uma das opções abaixo para iniciarmos a nossa conversa: ⬇️\r\n\r\n*[ 1 ]* Quero saber como funcionam os disparos de WhatsApp? \r\n*[ 2 ]* Quais equipamentos preciso ter para iniciar este serviço? \r\n*[ 3 ]* Terei que instalar ou configurar alguma coisa? \r\n*[ 4 ]* Posso enviar minha propaganda para o Brasil todo?* \r\n*[ 5 ]* Este robô responde as mensagens enviadas pelos clientes?\r\n*[ 6 ]* Preciso estar com meu celular conectado na internet para efetuar os disparos? \r\n*[ 7 ]* Se eu estiver viajando ou em reunião, os disparos continuam funcionando?\r\n*[ 8 ]* Preciso ter um número exclusivo para efetuar os disparos? \r\n*[ 16 ]* Quanto custa este serviço?  \r\n*[ 17 ]* Minha dúvida não está aqui, quero falar com alguém da Politeia");
 	     client.sendMessage(msg.from, saudacao)
      		});
