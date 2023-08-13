@@ -330,7 +330,7 @@ else if (msg.body !== null && msg.body === "16"){
 		  msg.reply("Para saber todos os detalhes sobre valores, verifique nossa tabela de preços 😁");
     });
     
-  if (msg.body !== null && msg.body === "17") {
+  else if (msg.body !== null && msg.body === "17") {
 
         const contact = await msg.getContact();
         setTimeout(function() {
@@ -341,9 +341,9 @@ else if (msg.body !== null && msg.body === "16"){
   
   }
   
-  else if (msg.body !== null && msg.body === "17") {
-    msg.reply("Seu contato já foi encaminhado para a Politeia");
-  } 
+  //else if (msg.body !== null && msg.body === "17") {
+  //  msg.reply("Seu contato já foi encaminhado para a Politeia");
+ // } 
   
   else if (msg.body !== null && msg.body === "18") {
     msg.reply("");
