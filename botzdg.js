@@ -359,7 +359,7 @@ else if (msg.body !== null && msg.body === "16"){
     msg.reply("");
   }
 
-  eelse if (msg.body !== null && msg.body === "23") {
+  else if (msg.body !== null && msg.body === "23") {
     msg.reply("");
   }
 
