@@ -330,7 +330,7 @@ else if (msg.body !== null && msg.body === "16"){
 		  msg.reply("Para saber todos os detalhes sobre valores, verifique nossa tabela de preços 😁");
     });
     
-  else if (msg.body !== null && msg.body === "17") {
+  if (msg.body !== null && msg.body === "17") {
 
         const contact = await msg.getContact();
         setTimeout(function() {
