@@ -264,31 +264,31 @@ client.on('message', async msg => {
   if (msg.from.includes("@g.us")) return null;
 
   if (msg.body !== null && msg.body === "1") {
-    msg.reply("Os disparos por WhatsApp são hoje a maior ferramenta de divulgação de serviços e produtos da internet. \n Se você busca aumentar seu cadastro de contatos, conquistar novos mercados ou manter seus clientes sempre atualizados com as novidade de seu negócio, a automatização do WhatsApp é para você!");
+    msg.reply("Os disparos por WhatsApp são hoje a maior ferramenta de divulgação de serviços e produtos da internet 📲\nSe você busca aumentar seu cadastro de contatos, conquistar novos mercados ou manter seus clientes sempre atualizados com as novidade de seu negócio, a automatização do WhatsApp é para você! 💰");
   } 
   
   else if (msg.body !== null && msg.body === "2") {
-    msg.reply("*" + nomeContato + "*, você não precisa de nada para contratar o serviço de disparos para WhatsApp da Politeia Marketing, apenas vontade de crescer e ganhar mais dinheiro!");
+    msg.reply("*" + nomeContato + "*, você não precisa de nada para contratar o serviço de disparos para WhatsApp da Politeia Marketing, apenas vontade de crescer e ganhar mais dinheiro! 🚀");
   }
   
   else if (msg.body !== null && msg.body === "3") {
-    msg.reply("*" + nomeContato + "*, " + "não é necssário instalar nenhum programa ou configurar aplicativos e contas, nós fazemos tudo isso por você!");
+    msg.reply("*" + nomeContato + "*, " + "não é necssário instalar nenhum programa ou configurar aplicativos e contas, nós fazemos tudo isso por você! 📵");
   }
      
     else if (msg.body !== null && msg.body === "4"){
-       msg.reply("Neste arquivo você encontra as localidades onde a Politeia atua ");
+       msg.reply("Atualmente os serviços da Politeia podem ser instalados em qualquer cidade do país! 🇧🇷");
     }
   
   else if (msg.body !== null && msg.body === "5") {
-    msg.reply("*" + nomeContato + "*, " + "para ter um pacote completo de relacionamento com seus contatos, peça também o serviço de secretária digital igual a este em que estamos falando agora, totalmente personalizado para seu negócio 😁");
+    msg.reply("*" + nomeContato + "*, " + "para ter um pacote completo de relacionamento com seus contatos, peça também o serviço de secretária digital igual a este em que estamos falando agora, totalmente personalizado para seu negócio 👩🏻‍💻");
   }
   
   else if (msg.body !== null && msg.body === "7") {
-    msg.reply("Todos os nossos serviços funcionam sem a necessidade de sua presença, por isso pode viajar ou se ausentar a vontade!");
+    msg.reply("Todos os nossos serviços funcionam sem a necessidade de sua presença, por isso pode viajar ou se ausentar a vontade! 🏄🏻");
   }
 
   else if (msg.body !== null && msg.body === "8") {
-    msg.reply("Não é preciso ter um número exclusivo para rodar os programas, nós cuidamos disso para você!");
+    msg.reply("Não é preciso ter um número exclusivo para rodar os programas, nós cuidamos disso para você! ☎️");
   }
   
   else if (msg.body !== null && msg.body === "9") {
@@ -321,14 +321,14 @@ client.on('message', async msg => {
 	  
 else if (msg.body !== null && msg.body === "16"){
      const index = MessageMedia.fromFilePath('./Automação de conversas.pdf');
-    client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Politeia'});
+    client.sendMessage(msg.from, index, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
    }
     
   else if (msg.body !== null && msg.body === "17") {
 
         const contact = await msg.getContact();
         setTimeout(function() {
-            msg.reply(`@${contact.number}` + ' seu contato já foi encaminhado para a Politeia');  
+            msg.reply(+ nomeContato + ', seu contato já foi encaminhado para a Politeia');  
             client.sendMessage('5511949146253@c.us','Contato Politeia. https://wa.me/' + `${contact.number}`);
 	    //client.sendMessage('5511949146253@c.us',`${contact.number}`);
           },1000 + Math.floor(Math.random() * 1000));
@@ -370,7 +370,7 @@ else if (msg.body !== null && msg.body === "16"){
 
   else if (msg.body !== null || msg.body === "0" || msg.type === 'ptt' || msg.hasMedia) {
     msg.reply("Olá *" + nomeContato + "* 🤗, nossa secretária virtual tem um recado para você!");
-      delay(3000).then(async function() {
+      delay(2000).then(async function() {
       try{
         const media = MessageMedia.fromFilePath('./saudacao.ogg');
         client.sendMessage(msg.from, media, {sendAudioAsVoice: true})
@@ -380,7 +380,7 @@ else if (msg.body !== null && msg.body === "16"){
       }
 		});
     delay(8000).then(async function() {
-      const saudacao = ("Este é um atendimento automático. Caso queira falar com um atendente, clique no número a seguir *11949146253*. \r\n\r\n Ou se quiser resolver sua dúvida por aqui agora mesmo, escolha uma das opções abaixo para iniciarmos a nossa conversa: \r\n\r\n*[ 1 ]* Quero saber como funcionam os disparos de WhatsApp? \r\n*[ 2 ]* Quais equipamentos preciso ter para iniciar este serviço? \r\n*[ 3 ]* Terei que instalar ou configurar alguma coisa? \r\n*[ 4 ]* Posso enviar minha propaganda para o Brasil todo?* \r\n*[ 5 ]* Este robô responde as mensagens enviadas pelos clientes?\r\n*[ 6 ]* Preciso estar com meu celular conectado na internet para efetuar os disparos? \r\n*[ 7 ]* Se eu estiver viajando ou em reunião, os disparos continuam funcionando?\r\n*[ 8 ]* Preciso ter um número exclusivo para efetuar os disparos? \r\n*[ 16 ]* Quanto custa este serviço?  \r\n*[ 17 ]* Minha dúvida não está aqui, quero falar com alguém da Politeia");
+      const saudacao = ("Este é um atendimento automático. Caso queira falar com um atendente, clique no número a seguir 📲*11949146253*. \r\n\r\nOu se quiser resolver sua dúvida por aqui agora mesmo, digite o número de uma das opções abaixo para iniciarmos a nossa conversa: ⬇️\r\n\r\n*[ 1 ]* Quero saber como funcionam os disparos de WhatsApp? \r\n*[ 2 ]* Quais equipamentos preciso ter para iniciar este serviço? \r\n*[ 3 ]* Terei que instalar ou configurar alguma coisa? \r\n*[ 4 ]* Posso enviar minha propaganda para o Brasil todo?* \r\n*[ 5 ]* Este robô responde as mensagens enviadas pelos clientes?\r\n*[ 6 ]* Preciso estar com meu celular conectado na internet para efetuar os disparos? \r\n*[ 7 ]* Se eu estiver viajando ou em reunião, os disparos continuam funcionando?\r\n*[ 8 ]* Preciso ter um número exclusivo para efetuar os disparos? \r\n*[ 16 ]* Quanto custa este serviço?  \r\n*[ 17 ]* Minha dúvida não está aqui, quero falar com alguém da Politeia");
 	     client.sendMessage(msg.from, saudacao)
      		});
     
@@ -388,7 +388,7 @@ else if (msg.body !== null && msg.body === "16"){
 });
 
 console.log("\nA Politeia desenvolve este e outros sistemas que usam inteligência artificial para facilitar sua interatividade com clientes e fornecedores de maneira simples e eficiente.")
-console.log("\nQuer um atendimento como esse? Mande uma mensagem agora mesmo para nossa equipe clicando no múmero a seguir: *11949146253*")
+console.log("\nQuer um atendimento como este? Mande uma mensagem agora mesmo para nossa equipe clicando no múmero a seguir: *11949146253*")
     
 server.listen(port, function() {
         console.log('Aplicação rodando na porta *: ' + port + ' . Acesse no link: http://localhost:' + port);
