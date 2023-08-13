@@ -264,7 +264,7 @@ client.on('message', async msg => {
   if (msg.from.includes("@g.us")) return null;
 
   if (msg.body !== null && msg.body === "1") {
-    msg.reply("Os disparos por WhatsApp são hoje a maior ferramenta de divulgação de serviços e produtos da internet. \n Se você busca aumentar seu cadastro de contatos, conquistar novos mercados ou manter seus clientes sempre atualizados com as novidade de seu negócio, a automatização do WhatsApp é para você!")
+    msg.reply("Os disparos por WhatsApp são hoje a maior ferramenta de divulgação de serviços e produtos da internet. \n Se você busca aumentar seu cadastro de contatos, conquistar novos mercados ou manter seus clientes sempre atualizados com as novidade de seu negócio, a automatização do WhatsApp é para você!");
   } 
   
   else if (msg.body !== null && msg.body === "2") {
@@ -276,12 +276,8 @@ client.on('message', async msg => {
   }
      
     else if (msg.body !== null && msg.body === "4"){
-    const index = MessageMedia.fromFilePath('./Automação de conversas.pdf');
-    client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Politeia'});
-    delay(4500).then(async function() {
-		  msg.reply("Neste arquivo você encontra as localidades onde a Politeia atua ");
-    });
-  }
+       msg.reply("Neste arquivo você encontra as localidades onde a Politeia atua ");
+    }
   
   else if (msg.body !== null && msg.body === "5") {
     msg.reply("*" + nomeContato + "*, " + "para ter um pacote completo de relacionamento com seus contatos, peça também o serviço de secretária digital igual a este em que estamos falando agora, totalmente personalizado para seu negócio 😁");
@@ -324,11 +320,9 @@ client.on('message', async msg => {
   }
 	  
 else if (msg.body !== null && msg.body === "16"){
-    const index = MessageMedia.fromFilePath('./PrecosDisparos.png');
+     const index = MessageMedia.fromFilePath('./Automação de conversas.pdf');
     client.sendMessage(msg.from, index, {caption: 'Atendimento Robotizado Politeia'});
-    delay(4500).then(async function() {
-		  msg.reply("Para saber todos os detalhes sobre valores, verifique nossa tabela de preços 😁");
-    });
+   }
     
   else if (msg.body !== null && msg.body === "17") {
 
@@ -341,9 +335,9 @@ else if (msg.body !== null && msg.body === "16"){
   
   }
   
-  //else if (msg.body !== null && msg.body === "17") {
-  //  msg.reply("Seu contato já foi encaminhado para a Politeia");
- // } 
+  else if (msg.body !== null && msg.body === "17") {
+  msg.reply("Seu contato já foi encaminhado para a Politeia");
+  } 
   
   else if (msg.body !== null && msg.body === "18") {
     msg.reply("");
