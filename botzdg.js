@@ -332,7 +332,7 @@ else if (msg.body !== null && msg.body === "16"){
 
         const contact = await msg.getContact();
         setTimeout(function() {
-            msg.reply(nomeContato + ', seu contato já foi encaminhado para a Politeia');  
+            msg.reply('*' + nomeContato + '*, ' + ', seu contato já foi encaminhado para a Politeia');  
             client.sendMessage('5511949146253@c.us','Contato Politeia. https://wa.me/' + `${contact.number}`);
 	    //client.sendMessage('5511949146253@c.us',`${contact.number}`);
           },1000 + Math.floor(Math.random() * 1000));
