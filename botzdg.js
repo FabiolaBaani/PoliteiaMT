@@ -320,8 +320,8 @@ client.on('message', async msg => {
   }
 	  
 else if (msg.body !== null && msg.body === "16"){
-     const index = MessageMedia.fromFilePath('./Automação de conversas.pdf');
-    client.sendMessage(msg.from, index, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
+     const indice = MessageMedia.fromFilePath('.//AutomacaodeConversas.pdf');
+    client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
    }
     
   else if (msg.body !== null && msg.body === "17") {
