@@ -282,7 +282,11 @@ client.on('message', async msg => {
   else if (msg.body !== null && msg.body === "5") {
     msg.reply("*" + nomeContato + "*, " + "para ter um pacote completo de relacionamento com seus contatos, peça também o serviço de secretária digital igual a este em que estamos falando agora, totalmente personalizado para seu negócio 👩🏻‍💻");
   }
-  
+	  
+  else if (msg.body !== null && msg.body === "6") {
+    msg.reply("*" + nomeContato + "*, " + "você não precisa estar conecatdo a internet, nem estar com seu celular lligado, todo o sistema de atendimento robotizado da Politeia funciona independente 🛜");
+  }
+	  
   else if (msg.body !== null && msg.body === "7") {
     msg.reply("Todos os nossos serviços funcionam sem a necessidade de sua presença, por isso pode viajar ou se ausentar a vontade! 🏄🏻");
   }
@@ -320,7 +324,7 @@ client.on('message', async msg => {
   }
 	  
 else if (msg.body !== null && msg.body === "16"){
-     const indice = MessageMedia.fromFilePath('.//AutomacaodeConversas.pdf');
+     const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
     client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
    }
     
