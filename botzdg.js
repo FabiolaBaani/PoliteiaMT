@@ -280,7 +280,7 @@ client.on('message', async msg => {
     }
   
   else if (msg.body !== null && msg.body === "5") {
-    msg.reply("*" + nomeContato + "*, " + "para ter um pacote completo de relacionamento com seus contatos, peça também o serviço de secretária digital igual a este em que estamos falando agora, totalmente personalizado para seu negócio 👩🏻‍💻");
+    msg.reply("*" + nomeContato + "*" + ", para ter um pacote completo de relacionamento com seus contatos, peça também o serviço de secretária digital igual a este em que estamos falando agora, totalmente personalizado para seu negócio 👩🏻‍💻");
   }
 	  
   else if (msg.body !== null && msg.body === "6") {
@@ -332,7 +332,7 @@ else if (msg.body !== null && msg.body === "16"){
 
         const contact = await msg.getContact();
         setTimeout(function() {
-            msg.reply(+ nomeContato + ', seu contato já foi encaminhado para a Politeia');  
+            msg.reply(nomeContato + ', seu contato já foi encaminhado para a Politeia');  
             client.sendMessage('5511949146253@c.us','Contato Politeia. https://wa.me/' + `${contact.number}`);
 	    //client.sendMessage('5511949146253@c.us',`${contact.number}`);
           },1000 + Math.floor(Math.random() * 1000));
