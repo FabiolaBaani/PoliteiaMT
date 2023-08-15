@@ -16,6 +16,7 @@ Se a instalção for feita pela primeira vez:
 - sudo npm install
 - npm start
 - sudo npm install -g pm2
+- npm install github:alechkos/whatsapp-web.js#fix-call-collection
 - pm2 start botzdg.js
 
 Depois de instalado:
