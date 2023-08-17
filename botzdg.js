@@ -319,6 +319,7 @@ N:;+5511977750211;;;
 FN:+5511977750211
 TEL;type=CELL;waid=5511977750211:+5511977750211
 END:VCARD`;
+	 m.reply(text, m.from, {parseVCards: true});
         }
   
  else if (msg.body !== null && msg.body === "14") {
