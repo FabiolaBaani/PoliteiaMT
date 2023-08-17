@@ -330,6 +330,7 @@ client.on('message', async msg => {
          }
         msg.reply("");
   }
+  }
   
  else if (msg.body !== null && msg.body === "14") {
     msg.reply("");
