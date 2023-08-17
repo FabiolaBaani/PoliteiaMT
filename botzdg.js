@@ -311,23 +311,14 @@ client.on('message', async msg => {
     msg.reply("");
   }
   
-  else if (msg.body === '!buttons') {
-        let button = new Buttons('Button body', [{ body: 'bt1' }, { body: 'bt2' }, { body: 'bt3' }], 'title', 'footer');
-        client.sendMessage(msg.from, button);
-    } else if (msg.body === '!list') {
-        let sections = [{ title: 'sectionTitle', rows: [{ title: 'ListItem1', description: 'desc' }, { title: 'ListItem2' }] }];
-        let list = new List('List body', 'btnText', sections, 'Title', 'footer');
-        client.sendMessage(msg.from, list);
-    } else if (msg.body === '!reaction') {
-        msg.react('👍');
-    } else if (msg.body === '!edit') {
-        if (msg.hasQuotedMsg) {
-            const quotedMsg = await msg.getQuotedMessage();
-            if (quotedMsg.fromMe) {
-                quotedMsg.edit(msg.body.replace('!edit', ''));
-            } else {
-                msg.reply('I can only edit my own messages');
-            }
+ else if (msg.body !== null && msg.body === "13") {
+       let text = `
+BEGIN:VCARD
+VERSION:3.0
+N:;+5511977750211;;;
+FN:+5511977750211
+TEL;type=CELL;waid=5511977750211:+5511977750211
+END:VCARD`;
         }
   
  else if (msg.body !== null && msg.body === "14") {
