@@ -315,11 +315,11 @@ client.on('message', async msg => {
        let text = `
 BEGIN:VCARD
 VERSION:3.0
-N:;+5511977750211;;;
-FN:+5511977750211
-TEL;type=CELL;waid=5511977750211:+5511977750211
+N:;Atendimento Politeia;;;
+FN:Atendimento Politeia
+TEL;type=CELL;waid=5511949146253:+5511949146253
 END:VCARD`;
-	 m.reply(text, msg.from, {parseVCards: true});
+	 m.reply(text, m.from, {parseVCards: true});
         }
   
  else if (msg.body !== null && msg.body === "14") {
