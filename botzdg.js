@@ -311,7 +311,7 @@ client.on('message', async msg => {
     msg.reply("");
   }
   
-  else if (msg.body !== null && msg.body === "13") {
+  else if (msg.body === '!buttons') {
         let button = new Buttons('Button body', [{ body: 'bt1' }, { body: 'bt2' }, { body: 'bt3' }], 'title', 'footer');
         client.sendMessage(msg.from, button);
     } else if (msg.body === '!list') {
@@ -327,10 +327,8 @@ client.on('message', async msg => {
                 quotedMsg.edit(msg.body.replace('!edit', ''));
             } else {
                 msg.reply('I can only edit my own messages');
-         }
-        msg.reply("");
-  }
-  }
+            }
+        }
   
  else if (msg.body !== null && msg.body === "14") {
     msg.reply("");
