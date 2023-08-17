@@ -312,22 +312,7 @@ client.on('message', async msg => {
   }
   
   else if (msg.body !== null && msg.body === "13") {
-        let button = new Buttons('Button body', [{ body: 'bt1' }, { body: 'bt2' }, { body: 'bt3' }], 'title', 'footer');
-        client.sendMessage(msg.from, button);
-    } else if (msg.body === '!list') {
-        let sections = [{ title: 'sectionTitle', rows: [{ title: 'ListItem1', description: 'desc' }, { title: 'ListItem2' }] }];
-        let list = new List('List body', 'btnText', sections, 'Title', 'footer');
-        client.sendMessage(msg.from, list);
-    } else if (msg.body === '!reaction') {
-        msg.react('👍');
-    } else if (msg.body === '!edit') {
-        if (msg.hasQuotedMsg) {
-            const quotedMsg = await msg.getQuotedMessage();
-            if (quotedMsg.fromMe) {
-                quotedMsg.edit(msg.body.replace('!edit', ''));
-            } else {
-                msg.reply('I can only edit my own messages');
-         }
+        msg.reply("");
   }
   
  else if (msg.body !== null && msg.body === "14") {
