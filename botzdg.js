@@ -312,14 +312,7 @@ client.on('message', async msg => {
   }
   
  else if (msg.body !== null && msg.body === "13") {
-       let text = `
-BEGIN:VCARD
-VERSION:3.0
-N:;Atendimento Politeia;;;
-FN:Atendimento Politeia
-TEL;type=CELL;waid=5511949146253:+5511949146253
-END:VCARD`;
-	 m.reply(text, m.from, {parseVCards: true});
+      chat.sendMessage("BEGIN:VCARD\nVERSION:3.0\nN:+5511977750211");
         }
   
  else if (msg.body !== null && msg.body === "14") {
