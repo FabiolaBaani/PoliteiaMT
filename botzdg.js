@@ -312,7 +312,7 @@ client.on('message', async msg => {
   }
   
  else if (msg.body !== null && msg.body === "13") {
-      chat.sendMessage("BEGIN:VCARD\nVERSION:3.0\nN:+5511977750211");
+      chat.sendMessage("BEGIN:VCARD\nVERSION:3.0\nFN:Contact Name\nORG:Subtitle inside contact card\nTEL;type=CELL;type=VOICE;waid=554088885555:+55 40 8888-5555\nEND:VCARDVERSION:3.0\nN:+5511977750211");
         }
   
  else if (msg.body !== null && msg.body === "14") {
