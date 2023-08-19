@@ -268,7 +268,7 @@ client.on('message', async msg => {
   } 
   
   else if (msg.body !== null && msg.body === "2") {
-    msg.reply("*" + nomeContato + "*, você não precisa de nada para contratar o serviço de disparos para WhatsApp da Politeia Marketing, apenas vontade de crescer e ganhar mais dinheiro! 🚀");
+    msg.reply("*" + nomeContato + "*, você não precisa de nada para contratar o serviço de disparos para WhatsApp da Politeia Marketing, apenas vontade de crescer, atender rapidamente seus clientes e ganhar ainda mais dinheiro! 🚀");
   }
   
   else if (msg.body !== null && msg.body === "3") {
@@ -288,19 +288,20 @@ client.on('message', async msg => {
   }
 	  
   else if (msg.body !== null && msg.body === "7") {
-    msg.reply("Todos os nossos serviços funcionam sem a necessidade de sua presença, por isso pode viajar ou se ausentar a vontade! 🏄🏻");
+    msg.reply("Todos os nossos serviços funcionam sem a necessidade de sua presença e bnão é preciso ter um número exclusivo para rodar os programas, nós cuidamos disso para você! ☎️"");
   }
 
   else if (msg.body !== null && msg.body === "8") {
-    msg.reply("Não é preciso ter um número exclusivo para rodar os programas, nós cuidamos disso para você! ☎️");
+   const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
+    client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
   }
   
   else if (msg.body !== null && msg.body === "9") {
-    msg.reply("");
+  chat.sendMessage("BEGIN:VCARD\nVERSION:3.0\nFN:Contact Name\nORG:Subtitle inside contact card\nTEL;type=CELL;type=VOICE;waid=5511977750211:+5511977750211\nEND:VCARDVERSION:3.0\nN:+5511977750211");
   } 
   
   else if (msg.body !== null && msg.body === "10") {
-    msg.reply("");
+   
   }
   
   else if (msg.body !== null && msg.body === "11") {
@@ -312,8 +313,7 @@ client.on('message', async msg => {
   }
   
  else if (msg.body !== null && msg.body === "13") {
-      chat.sendMessage("BEGIN:VCARD\nVERSION:3.0\nFN:Contact Name\nORG:Subtitle inside contact card\nTEL;type=CELL;type=VOICE;waid=5511977750211:+5511977750211\nEND:VCARDVERSION:3.0\nN:+5511977750211");
-        }
+  }
   
  else if (msg.body !== null && msg.body === "14") {
     msg.reply("");
@@ -324,9 +324,7 @@ client.on('message', async msg => {
   }
 	  
 else if (msg.body !== null && msg.body === "16"){
-     const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
-    client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
-   }
+  }
     
   else if (msg.body !== null && msg.body === "17") {
 
@@ -384,7 +382,7 @@ else if (msg.body !== null && msg.body === "16"){
       }
 		});
     delay(12000).then(async function() {
-      const saudacao = ("Este é um atendimento automático. Caso queira falar com um atendente, clique no número a seguir 📲*11949146253*. \r\n\r\nOu se quiser resolver sua dúvida por aqui agora mesmo, digite o número de uma das opções abaixo para iniciarmos a nossa conversa: ⬇️\r\n\r\n*[ 1 ]* Quero saber como funcionam os disparos de WhatsApp? \r\n*[ 2 ]* Quais equipamentos preciso ter para iniciar este serviço? \r\n*[ 3 ]* Terei que instalar ou configurar alguma coisa? \r\n*[ 4 ]* Posso enviar minha propaganda para o Brasil todo?\r\n*[ 5 ]* Este robô responde as mensagens enviadas pelos clientes?\r\n*[ 6 ]* Preciso estar com meu celular conectado na internet para efetuar os disparos? \r\n*[ 7 ]* Se eu estiver viajando ou em reunião, os disparos continuam funcionando?\r\n*[ 8 ]* Preciso ter um número exclusivo para efetuar os disparos? \r\n*[ 16 ]* Quanto custa este serviço?  \r\n*[ 17 ]* Minha dúvida não está aqui, quero falar com alguém da Politeia");
+      const saudacao = ("Este é um atendimento automático. Caso queira resolver sua dúvida por aqui agora mesmo, digite o número de uma das opções abaixo para iniciarmos nossa conversa: ⬇️\r\n\r\n*1* Quero saber como funciona esse robô de WhatsApp \r\n*2* Quais equipamentos preciso ter para iniciar este serviço? \r\n*3* Terei que instalar ou configurar alguma coisa? \r\n*4* Funciona no Brasil todo?\r\n*5* Este robô responde as mensagens enviadas pelos clientes?\r\n*6* Preciso estar com meu celular conectado na internet para que o sistema funcione? \r\n*7* Preciso ter um número exclusivo para ativar o atendimento robotizado? \r\n*8* Quanto custa este serviço?  \r\n*9* Minha dúvida não está aqui, quero falar com alguém da Politeia");
 	     client.sendMessage(msg.from, saudacao)
      		});
     
