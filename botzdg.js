@@ -268,11 +268,11 @@ client.on('message', async msg => {
   } 
   
   else if (msg.body !== null && msg.body === "2") {
-    msg.reply("*" + nomeContato + "*, você não precisa de nada para contratar o serviço de disparos para WhatsApp da Politeia Marketing, apenas vontade de crescer, atender rapidamente seus clientes e ganhar ainda mais dinheiro! 🚀");
+    msg.reply("*" + nomeContato + "*, você não precisa de equipamentos especiais para contratar os serviços de inteligência artificial para WhatsApp da Politeia, apenas vontade de crescer, atender rapidamente seus clientes e ganhar ainda mais dinheiro! 🚀");
   }
   
   else if (msg.body !== null && msg.body === "3") {
-    msg.reply("*" + nomeContato + "*, " + "não é necssário instalar nenhum programa ou configurar aplicativos e contas, nós fazemos tudo isso por você! 📵");
+    msg.reply("*" + nomeContato + "*, " + "não é necssário instalar nenhum programa ou configurar aplicativos e contas, nós fazemos tudo isso por você! 😇");
   }
      
     else if (msg.body !== null && msg.body === "4"){
@@ -280,20 +280,20 @@ client.on('message', async msg => {
     }
   
   else if (msg.body !== null && msg.body === "5") {
-    msg.reply("*" + nomeContato + "*" + ", para ter um pacote completo de relacionamento com seus contatos, peça também o serviço de secretária digital igual a este em que estamos falando agora, totalmente personalizado para seu negócio 👩🏻‍💻");
+    msg.reply("*" + nomeContato + "*" + ", nosso sistema de atendimento robotizado interage totalmente com seus clientes, envia respostas, faz perguntas, disponibiliza arquivos de áudio, vídeo e documentos, direciona chamadas e muito mais! 👩🏻‍💻");
   }
 	  
   else if (msg.body !== null && msg.body === "6") {
-    msg.reply("*" + nomeContato + "*, " + "você não precisa estar conecatdo a internet, nem estar com seu celular lligado, todo o sistema de atendimento robotizado da Politeia funciona independente 🛜");
+    msg.reply("*" + nomeContato + "*, " + "você não precisa estar conecatdo a internet, nem estar com seu celular ligado!\nTodo o sistema de atendimento robotizado da Politeia funciona independente do cliente 😉");
   }
 	  
   else if (msg.body !== null && msg.body === "7") {
-    msg.reply("Todos os nossos serviços funcionam sem a necessidade de sua presença e bnão é preciso ter um número exclusivo para rodar os programas, nós cuidamos disso para você! ☎️"");
+    msg.reply("Não é preciso ter um número exclusivo para instalação do atendimento robotizado, a menos que você queira.\nO sistema pode funcionar em um número que você já utilize para atendimento, ou em algum número fornecido pela Politeia. A escolha é sua!");
   }
 
   else if (msg.body !== null && msg.body === "8") {
    const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
-    client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
+    client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado, aqui você encontra detalhes sobre o que a inteligência artificial pode fazer por suas redes sociais 🤖'});
   }
 	   else if (msg.body !== null && msg.body === "8") {
 
