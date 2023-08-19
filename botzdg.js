@@ -299,7 +299,7 @@ client.on('message', async msg => {
           },1000 + Math.floor(Math.random() * 1000));
 	   }
   
-  else if (msg.body !== null && msg.body === "8") {
+  else {
  	   
  const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
     client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado, aqui você encontra detalhes sobre o que a inteligência artificial pode fazer por suas redes sociais 🤖'});      
