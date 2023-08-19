@@ -295,6 +295,15 @@ client.on('message', async msg => {
    const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
     client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado'});
   }
+	   else if (msg.body !== null && msg.body === "8") {
+
+        const contact = await msg.getContact();
+        setTimeout(function() {
+            client.sendMessage('5511949146253@c.us','Cliente *' + nomeContato + '*,baixou catálogo. https://wa.me/' + `${contact.number}`);
+	    //client.sendMessage('5511949146253@c.us',`${contact.number}`);
+          },1000 + Math.floor(Math.random() * 1000));
+  
+  }
   
   else if (msg.body !== null && msg.body === "9") {
   chat.sendMessage("BEGIN:VCARD\nVERSION:3.0\nFN:Contact Name\nORG:Subtitle inside contact card\nTEL;type=CELL;type=VOICE;waid=5511977750211:+5511977750211\nEND:VCARDVERSION:3.0\nN:+5511977750211");
@@ -328,18 +337,18 @@ else if (msg.body !== null && msg.body === "16"){
     
   else if (msg.body !== null && msg.body === "17") {
 
-        const contact = await msg.getContact();
-        setTimeout(function() {
-            msg.reply('*' + nomeContato + '*, ' + ', seu contato já foi encaminhado para a Politeia');  
-            client.sendMessage('5511949146253@c.us','Contato Politeia. https://wa.me/' + `${contact.number}`);
+        //const contact = await msg.getContact();
+        //setTimeout(function() {
+            //msg.reply('*' + nomeContato + '*, ' + ', seu contato já foi encaminhado para a Politeia');  
+            //client.sendMessage('5511949146253@c.us','Contato Politeia. https://wa.me/' + `${contact.number}`);
 	    //client.sendMessage('5511949146253@c.us',`${contact.number}`);
-          },1000 + Math.floor(Math.random() * 1000));
+          //},1000 + Math.floor(Math.random() * 1000));
   
   }
   
-  else if (msg.body !== null && msg.body === "17") {
-  msg.reply("Seu contato já foi encaminhado para a Politeia");
-  } 
+  //else if (msg.body !== null && msg.body === "17") {
+  //msg.reply("Seu contato já foi encaminhado para a Politeia");
+  //} 
   
   else if (msg.body !== null && msg.body === "18") {
     msg.reply("");
