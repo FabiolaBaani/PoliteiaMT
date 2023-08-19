@@ -276,7 +276,7 @@ client.on('message', async msg => {
   }
      
     else if (msg.body !== null && msg.body === "4"){
-       msg.reply("Atualmente os serviços da Politeia podem ser instalados em qualquer cidade do país! 🇧🇷");
+       msg.reply("Atualmente os serviços da Politeia podem ser instalados em qualquer cidade do 🇧🇷");
     }
   
   else if (msg.body !== null && msg.body === "5") {
@@ -288,7 +288,7 @@ client.on('message', async msg => {
   }
 	  
   else if (msg.body !== null && msg.body === "7") {
-    msg.reply("Não é preciso ter um número exclusivo para instalação do atendimento robotizado, a menos que você queira.\nO sistema pode funcionar em um número que você já utilize para atendimento, ou em algum número fornecido pela Politeia. A escolha é sua!");
+    msg.reply("Não é preciso ter um número de 📱 exclusivo para instalação do atendimento robotizado, a menos que você queira.\nO sistema pode funcionar em um número que você já utilize para atendimento, ou em algum número fornecido pela Politeia. A escolha é sua!");
   }
 
   else if (msg.body !== null && msg.body === "8") {
