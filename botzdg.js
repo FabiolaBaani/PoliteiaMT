@@ -264,7 +264,7 @@ client.on('message', async msg => {
   if (msg.from.includes("@g.us")) return null;
 
   if (msg.body !== null && msg.body === "1") {
-    msg.reply("Os disparos por WhatsApp são hoje a maior ferramenta de divulgação de serviços e produtos da internet 📲\nSe você busca aumentar seu cadastro de contatos, conquistar novos mercados ou manter seus clientes sempre atualizados com as novidade de seu negócio, a automatização do WhatsApp é para você! 💰");
+    msg.reply("O uso de inteligência artificial no WhatsApp é hoje a maior ferramenta de divulgação e atendimento de serviços e produtos da internet 📲\nSe você busca aumentar seu cadastro de contatos, conquistar novos mercados ou manter seus clientes sempre atualizados com as novidade de seu negócio, a robotização do WhatsApp é para você! 💰");
   } 
   
   else if (msg.body !== null && msg.body === "2") {
@@ -294,14 +294,13 @@ client.on('message', async msg => {
   else if (msg.body !== null && msg.body === "8") {
    const contact = await msg.getContact();
         setTimeout(function() {
-            client.sendMessage('5511949146253@c.us','Cliente *' + nomeContato + '*,baixou catálogo. https://wa.me/' + `${contact.number}`);
+            client.sendMessage('5511949146253@c.us','Cliente *' + nomeContato + '*, baixou catálogo. https://wa.me/' + `${contact.number}`);
 	    //client.sendMessage('5511949146253@c.us',`${contact.number}`);
           },1000 + Math.floor(Math.random() * 1000));
-  }
-	   else if (msg.body !== null && msg.body === "8") {
+ 	   
  const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
     client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado, aqui você encontra detalhes sobre o que a inteligência artificial pode fazer por suas redes sociais 🤖'});      
-  
+    }
   }
   
   else if (msg.body !== null && msg.body === "9") {
