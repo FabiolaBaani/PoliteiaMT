@@ -300,7 +300,7 @@ client.on('message', async msg => {
  	   
  const indice = MessageMedia.fromFilePath('./AutomacaodeConversas.pdf');
     client.sendMessage(msg.from, indice, {caption: 'Baixe nosso catálogo sobre atendimento robotizado, aqui você encontra detalhes sobre o que a inteligência artificial pode fazer por suas redes sociais 🤖'});      
-    }
+    
   }
   
   else if (msg.body !== null && msg.body === "9") {
