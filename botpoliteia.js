@@ -308,7 +308,7 @@ client.on('message', async msg => {
   } 
   
   else if (msg.body !== null && msg.body === "10") {
-   
+   msg.reply("");
   }
   
   else if (msg.body !== null && msg.body === "11") {
