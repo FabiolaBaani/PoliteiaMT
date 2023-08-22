@@ -305,7 +305,6 @@ client.on('message', async msg => {
   else if (msg.body !== null && msg.body === "9") {
 	  msg.reply("Nosso horário de funcionamento é das *9h às 19h*\nCaso nenhum atendente te responda dentro deste horário, tente novamente por favor!\nSegue contato de quem ficará responsável por lhe dar as informações necessárias:");
   
-	  chat.sendMessage("BEGIN:VCARD\nVERSION:3.0\nFN:Contact Name\nORG:Subtitle inside contact card\nTEL;type=CELL;type=VOICE;waid=5511977750211:+5511977750211\nEND:VCARDVERSION:3.0\nN:+5511977750211");
   } 
   
   else if (msg.body !== null && msg.body === "10") {
