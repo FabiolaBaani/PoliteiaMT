@@ -308,74 +308,63 @@ client.on('message', async msg => {
   } 
   
   else if (msg.body !== null && msg.body === "10") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
   else if (msg.body !== null && msg.body === "11") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
    }
   
   else if (msg.body !== null && msg.body === "12") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
  else if (msg.body !== null && msg.body === "13") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
  else if (msg.body !== null && msg.body === "14") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
 
   else if (msg.body !== null && msg.body === "15") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
 	  
 else if (msg.body !== null && msg.body === "16"){
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
     
   else if (msg.body !== null && msg.body === "17") {
-
-        //const contact = await msg.getContact();
-        //setTimeout(function() {
-            //msg.reply('*' + nomeContato + '*, ' + ', seu contato já foi encaminhado para a Politeia');  
-            //client.sendMessage('5511949146253@c.us','Contato Politeia. https://wa.me/' + `${contact.number}`);
-	    //client.sendMessage('5511949146253@c.us',`${contact.number}`);
-          //},1000 + Math.floor(Math.random() * 1000));
-  
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
-  //else if (msg.body !== null && msg.body === "17") {
-  //msg.reply("Seu contato já foi encaminhado para a Politeia");
-  //} 
-  
   else if (msg.body !== null && msg.body === "18") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
   else if (msg.body !== null && msg.body === "19") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
   else if (msg.body !== null && msg.body === "20") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
   else if (msg.body !== null && msg.body === "21") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
   
   else if (msg.body !== null && msg.body === "22") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
 
   else if (msg.body !== null && msg.body === "23") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
 
   else if (msg.body !== null && msg.body === "24") {
-  msg.reply("Opção inválida"); 
+  msg.reply("Opção inválida!\nEscolha um número do menu principal por favor."); 
   }
 
   else if (msg.body !== null || msg.body === "0" || msg.type === 'ptt' || msg.hasMedia) {
@@ -390,7 +379,7 @@ else if (msg.body !== null && msg.body === "16"){
       }
 		});
     delay(12000).then(async function() {
-      const saudacao = ("Este é um atendimento *digital*.\nCaso queira resolver sua dúvida por aqui mesmo, digite o número de uma das opções abaixo para iniciarmos nossa conversa: ⬇️\r\n\r\n*1* - Quero saber como funciona esse robô de WhatsApp \r\n*2* - Quais equipamentos preciso ter para iniciar este serviço? \r\n*3* - Terei que instalar ou configurar alguma coisa? \r\n*4* - Funciona no Brasil todo?\r\n*5* - Este robô responde as mensagens enviadas pelos clientes?\r\n*6* - Preciso estar com meu celular conectado na internet para que o sistema funcione? \r\n*7* - Preciso ter um número exclusivo para ativar o atendimento robotizado? \r\n*8* - Quanto custa este serviço?  \r\n*9* - Minha dúvida não está aqui, quero falar com alguém da Politeia");
+      const saudacao = ("Este é um atendimento *digital*.\nCaso queira resolver sua dúvida por aqui mesmo, digite o número de uma das opções abaixo para iniciarmos nossa conversa: ⬇️\r\n\r\n*1* - Quero saber como funciona esse robô de WhatsApp \r\n\r\n*2* - Quais equipamentos preciso ter para iniciar este serviço? \r\n\r\n*3* - Terei que instalar ou configurar alguma coisa? \r\n\r\n*4* - Funciona no Brasil todo?\r\n\r\n*5* - Este robô responde as mensagens enviadas pelos clientes?\r\n*\r\n6* - Preciso estar com meu celular conectado na internet para que o sistema funcione? \r\n*7* - Preciso ter um número exclusivo para ativar o atendimento robotizado? \r\n\r\n*8* - Quanto custa este serviço?  \r\n\r\n*9* - Minha dúvida não está aqui, quero falar com alguém da Politeia");
 	     client.sendMessage(msg.from, saudacao)
      		});
     
